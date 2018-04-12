@@ -2,27 +2,29 @@ body{
   margin:0;
   background-color:#d8dfea;
 }
-
-#main-body{
+#middle{
   height: 100%;
   width: 100%;
-}
-
-#middle{
-  margin-top: 20px;
+  padding-top: 70px;
   margin-left: 300px;
   margin-right: 300px;
   display: flex;
+  flex-direction: row;
+}
+
+#card-size{
+  width:100%;
 }
 
 #left-sidebar-body{
   background-color:pink;
   height: 1000px;
   width: 240px;
+  /*position: fixed;*/
 }
 
 #make-post-body{
-  background-color:#00b342;
+  background-color:white;
   width:100%;
   height:200px;
   margin-bottom: 20px;
@@ -31,20 +33,23 @@ body{
 .posts{
   background-color:#42bf42;
   width:100%;
-  height:400px;
+  height:550px;
+  margin-bottom: 20px;
+  z-index: -1;
 }
 
 #right-sidebar-body{
   background-color:blue;
   height: 1000px;
   width: 370px;
+  /*margin-left: 1300px;*/
+  /*position: fixed;*/
 }
 
 #main-posts-body{
   margin-left: 20px;
   margin-right: 20px;
-  background-color:orange;
-  height: 1000px;
+  height: 100%;
   width: 610px;
   display: flex;
   flex-direction: column;
@@ -52,12 +57,14 @@ body{
 
 #nav-body{
   padding-left: 300px;
+  display: flex;
 }
 
-.nav{
+#nav{
   background-color:#4267b2;
   height: 50px;
   width: 100%;
+  position: fixed;
 }
 
 #search-rectangle {
@@ -66,27 +73,11 @@ body{
 	background: grey;
 }
 
-.nav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+#button-make{
+  border-right: 1px solid;
 }
 
-.nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.nav a.active {
-    background-color: #2196F3;
-    color: white;
-}
-
-.nav input[type=text] {
+input[type=text] {
     float: left;
     padding: 6px;
     border: none;
